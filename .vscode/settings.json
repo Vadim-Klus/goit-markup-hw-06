@@ -1,0 +1,4 @@
+{
+  "editor.suggest.showStatusBar": true,
+  "git.blame.statusBarItem.enabled": false
+}
