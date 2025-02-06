@@ -28,6 +28,10 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -62,6 +66,7 @@ img {
   .container {
     max-width: 1158px;
     padding: 0 15px;
+    margin: 0 auto;
   }
 }
 
@@ -76,6 +81,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .nav-list,
@@ -84,7 +90,241 @@ img {
 }
 
 .menu-btn {
-  margin-left: auto;
+  padding: 0;
   background-color: transparent;
   border: none;
 }
+
+.menu-icon {
+  display: block;
+  fill: #2f2f37;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+
+.header-logo {
+  padding: 16px 0;
+  display: block;
+}
+
+.header-logo .logo-part {
+  color: #2e2f42;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-logo {
+    padding: 24px 0;
+    margin-right: 120px;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 24px 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link.current {
+    position: relative;
+  }
+
+  .nav-link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+
+    background-color: #404bbf;
+  }
+
+  .contacts {
+    font-style: normal;
+    display: block;
+  }
+
+  .contacts-link {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contacts-link:hover,
+  .contacts-link:focus,
+  .nav-link:hover,
+  .nav-link:focus,
+  .nav-link.current {
+    color: #404bbf;
+  }
+
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header-logo {
+    margin-right: 76px;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contacts-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+}
+/* --------------mobile menu------------ */
+
+/*---------------section 1------------ */
+
+/*---------------section 2------------ */
+
+.text-about {
+  padding: 96px 0;
+}
+
+.section-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+}
+
+.title-item {
+  width: 100%;
+}
+
+.text-icon {
+  display: none;
+}
+
+.title-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-align: center;
+}
+
+.title-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+@media screen and (min-width: 768px) {
+  .section-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .title-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .title-subtitle {
+    text-align: justify;
+    margin-bottom: 8px;
+  }
+
+  .title-text {
+    font-weight: 400;
+    /* font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; */
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .text-about {
+    padding: 120px 0;
+  }
+
+  .section-list {
+    gap: 24px;
+  }
+
+  .title-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .text-icon {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    /* letter-spacing: 0.02em; */
+
+    margin-bottom: 8px;
+  }
+  .title-text {
+    font-weight: 400;
+    /* font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em; */
+  }
+}
+
+/*---------------section 3------------ */
+
+/*---------------section 4------------ */
+
+/*---------------footer------------ */
+
+/*---------------MODAL WINDOW---------*/
