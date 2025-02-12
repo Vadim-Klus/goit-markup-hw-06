@@ -363,8 +363,7 @@ button {
 .text-icon {
   display: none;
 }
-
-.title-subtitle {
+.title-strategy {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -372,12 +371,11 @@ button {
   color: #2e2f42;
   text-align: center;
 }
-
-.title-text {
+.text-strategy {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: #434455;
 }
 
@@ -392,16 +390,9 @@ button {
     width: calc((100% - 24px) / 2);
   }
 
-  .title-subtitle {
+  .title-strategy {
     text-align: justify;
     margin-bottom: 8px;
-  }
-
-  .title-text {
-    font-weight: 400;
-    /* font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; */
   }
 }
 
@@ -430,7 +421,7 @@ button {
     justify-content: center;
   }
 
-  .title-subtitle {
+  .title-strategy {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -438,7 +429,7 @@ button {
 
     margin-bottom: 8px;
   }
-  .title-text {
+  .text-strategy {
     font-weight: 400;
     /* font-size: 16px;
     line-height: 1.5;
@@ -447,7 +438,80 @@ button {
 }
 
 /*---------------section 3------------ */
+.team-images {
+  background-color: #f4f4fd;
+  padding: 96px 0;
+}
 
+.title-images {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+.title-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.title-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.images-list {
+  display: flex;
+  gap: 72px;
+  flex-wrap: wrap;
+  margin: 0 12px;
+}
+
+.title-item-team {
+  background-color: #fff;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  border-radius: 0 0 4px 4px;
+}
+
+.container-position {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-icon-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.team-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-soc-icon {
+  fill: #f4f4fd;
+}
+.team-link:hover,
+.team-link:focus {
+  background-color: #404bbf;
+}
 /*---------------section 4------------ */
 
 /*---------------footer------------ */
