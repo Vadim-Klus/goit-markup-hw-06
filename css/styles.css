@@ -275,10 +275,13 @@ button {
 .mobile-menu-nav {
   margin-bottom: auto;
 }
-.mobmenu-nav-list {
+
+.mobmenu-nav-item:last-child {
+  margin-bottom: 0;
 }
+
 .mobmenu-nav-item {
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 .mobmenu-nav-link {
   font-weight: 700;
@@ -287,6 +290,10 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+.mobmenu-nav-item:first-child .mobmenu-nav-link {
+  color: #404bbf;
+}
+
 .current {
 }
 .mobile-menu-address {
@@ -294,8 +301,11 @@ button {
 }
 .mobmenu-contacts-list {
 }
+.mobmenu-contacts-item:first-child {
+  margin-top: 0;
+}
 .mobmenu-contacts-item {
-  padding-top: 24px;
+  margin-top: 24px;
 }
 .mobmenu-contacts-link {
   font-weight: 500;
@@ -304,6 +314,10 @@ button {
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobmenu-contacts-item:first-child .mobmenu-contacts-link {
+  color: #4d5ae5;
 }
 .mobile-menu-social {
   display: flex;
@@ -418,16 +432,15 @@ button {
         url(../images/hero-bg-tablet-@2x.jpg);
     }
   }
-}
+  .page-title-text {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+  }
 
-.page-title-text {
-  font-size: 56px;
-  line-height: 1.07;
-  max-width: 496px;
-}
-
-.button {
-  margin-top: 36px;
+  .button {
+    margin-top: 36px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -435,7 +448,7 @@ button {
     padding: 188px 0;
   }
   .button {
-    margin-top: 46px;
+    margin-top: 48px;
   }
 
   .button:hover,
@@ -493,6 +506,7 @@ button {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
+  margin-bottom: 8px;
 }
 .text-strategy {
   font-weight: 500;
@@ -515,7 +529,6 @@ button {
 
   .title-strategy {
     text-align: justify;
-    margin-bottom: 8px;
   }
 }
 
@@ -548,15 +561,9 @@ button {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    /* letter-spacing: 0.02em; */
-
-    margin-bottom: 8px;
   }
   .text-strategy {
     font-weight: 400;
-    /* font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em; */
   }
 }
 
@@ -583,6 +590,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .title-text {
@@ -930,7 +938,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .page-footer {
-    padding: 96px 15px;
+    padding: 100px 0px;
   }
   .footer-container {
     padding: 0 15px;
@@ -987,7 +995,7 @@ button {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px;
 }
 .modal-close {
   position: absolute;
@@ -1181,6 +1189,7 @@ button {
   .modal {
     width: 408px;
     min-height: 564px;
+    padding: 72px 24px 24px;
   }
   .modal-input {
     width: 360px;
